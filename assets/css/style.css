@@ -1,0 +1,226 @@
+/* Fuentes */
+@font-face {
+  font-family: "fjalla";
+  src: url(../fonts/fuente.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Generales */
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "fjalla", sans-serif, Helvetica, Arial;
+  text-decoration: none;
+}
+
+.clearfix {
+  clear: both;
+  float: none;
+}
+
+body {
+  background: white;
+}
+
+/* Cabecera */
+#cabecera {
+  width: 85%;
+  height: auto;
+  background: transparent;
+  margin: 0px auto;
+}
+
+/* Logo */
+#logo {
+  float: left;
+  width: 540px;
+  height: 110px;
+}
+#logo a {
+  font-family: "fjalla", Helvetica;
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: #05CE7B;
+  text-shadow: 0px 0px 0px #003365, 1px 1px 0px #003365, 2px 2px 0px #003365;
+  transition: all, 500ms;
+  line-height: 90px;
+  margin-left: 20px;
+}
+#logo a:hover {
+  cursor: pointer;
+  text-shadow: 0px 0px 0px black, -1px -1px 0px black, -2px -2px 0px black;
+}
+
+/* Footer */
+#pie {
+  clear: both;
+  width: 83%;
+  margin: 0px auto;
+  background: linear-gradient(to bottom, #F9F9F9 0px, #E9E9E9 100%);
+  border: 1px solid #C9C9C9;
+  border-radius: 8px;
+  box-shadow: 0px 1px 1px #EEE;
+  overflow: hidden;
+  color: #003365;
+  height: auto;
+  padding: 13px;
+  text-align: center;
+}
+
+/* Menu */
+#menu {
+  clear: both;
+  width: 100%;
+  height: 45px;
+  background: linear-gradient(to bottom, #F9F9F9 0px, #E9E9E9 100%);
+  border: 1px solid #C9C9C9;
+  border-radius: 8px;
+  box-shadow: 0px 1px 1px #CCC;
+  overflow: hidden;
+}
+#menu ul {
+  list-style: none;
+}
+#menu ul li {
+  float: left;
+  line-height: 44px;
+  border-right: 1px solid #D6D6D6;
+}
+#menu ul li a {
+  display: block;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 15px;
+  color: #003365;
+}
+#menu ul li a:hover {
+  background: linear-gradient(to bottom, #F2F2F2 0px, #DAD9D4 100%);
+}
+
+/* Contenedor */
+#contenedor {
+  width: 85%;
+  height: auto;
+  margin: 0px auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* Principal */
+#principal {
+  float: left;
+  width: 65%;
+  min-height: 615px;
+  background: #EFEFEF;
+  border-radius: 5px;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.3), 0px 0px 1px #FFF inset, 0px -3px 2px rgba(0, 0, 0, 0.25) inset;
+  margin-left: 20px;
+  padding: 20px;
+  overflow: hidden;
+}
+#principal a {
+  color: #333;
+}
+#principal h1 {
+  font-size: 32px;
+  color: #444;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px #CCC;
+  font-family: "fjalla";
+}
+#principal h2 {
+  font-size: 20px;
+  color: #05CE7B;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px #CCC;
+  font-family: "fjalla";
+  margin-top: 25px;
+}
+#principal .nombre-categoria {
+  color: #FFCB00;
+}
+#principal p {
+  margin-top: 8px;
+}
+#principal #boton-principal a {
+  text-align: center;
+  display: block;
+  border-radius: 4px;
+  padding: 11px;
+  color: #FFCB00;
+  border: 1px solid #5c0257;
+  background: #811c7c;
+  cursor: pointer;
+  width: 139px;
+  margin: 0px 5px 5px 5px;
+  margin-top: 35px;
+  float: left;
+}
+
+.fecha {
+  color: #811c7c;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+/* Barra lateral */
+#sidebar {
+  float: right;
+  width: 27%;
+  height: auto;
+}
+
+.bloque {
+  display: block;
+  width: 90%;
+  margin: 0px auto;
+  margin-bottom: 35px;
+  background: #EFEFEF;
+  padding: 15px;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.3), 0px 0px 1px #FFF inset, 0px -3px 2px rgba(0, 0, 0, 0.25) inset;
+}
+.bloque h2 {
+  text-align: center;
+  color: #444;
+  text-shadow: 1px 1px 2px #CCC;
+  margin-bottom: 15px;
+}
+
+label, input[type=text], input[type=email], input[type=password] {
+  display: block;
+  width: 90%;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  color: #003365;
+}
+label input[type=text], label input[type=email], label input[type=password], input[type=text] input[type=text], input[type=text] input[type=email], input[type=text] input[type=password], input[type=email] input[type=text], input[type=email] input[type=email], input[type=email] input[type=password], input[type=password] input[type=text], input[type=password] input[type=email], input[type=password] input[type=password] {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+input[type=submit], input[type=button], .boton {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 7px;
+  display: block;
+  border-radius: 4px;
+  color: #FFCB00 !important;
+  border: 1px solid #5c0257;
+  background: #811c7c;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Errores */
+.alerta {
+  padding: 5px;
+  font-size: 14px;
+  color: white;
+  background: #05CE7B;
+  box-shadow: 0px 1px 2px #CCC;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+/*# sourceMappingURL=style.css.map */
